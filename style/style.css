@@ -41,7 +41,7 @@ a{
 }
 
 .header{
-    height: 100vh;
+    height: 60vh;
 
 }
 .navbar{
@@ -76,10 +76,22 @@ display: flex;
     color: var(--clr-dark-blue);
 }
 
-@media screen and (max-width : 425px){
+@media screen and (max-width : 768px){
     .navbar{
         flex-direction: column;
         justify-content: space-between;
     }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .list-link{
+        font-size: 1rem;
+    }
+    
+}
+
+.hero-section{
+    display: flex;
+    height: calc(60vh - 5rem);
     
 }
