@@ -91,7 +91,10 @@ display: flex;
 }
 
 .hero-section{
+    width: 80%;
+    margin: auto;
     display: flex;
+    align-items: center;
     height: calc(60vh - 5rem);
-    
+
 }
