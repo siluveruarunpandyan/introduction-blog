@@ -177,7 +177,7 @@ font-size: 3.rem;
 .skill-list-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1.25rem;
     margin-top: 2rem;
@@ -188,8 +188,86 @@ font-size: 3.rem;
     background-color: var(--clr-white);
     box-shadow: 4px 3px rgba(0, 0, 0, 0.15) ;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.25rem;
 }
+
+/*project section*/
+.project-list-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+.project-list-item{
+    width: 22rem;
+    height: 20rem;
+   border-radius: 10px;
+   border: 2px solid var(--clr-dark-blue);
+   transition: all 0.3s ease;
+}
+.project-list-item:hover{
+    transform: scale(1.05);
+}
+.project-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+}
+.btn-code{
+    color: var(--clr-white);
+    background-color: var(--clr-dark-blue);
+    border: 2px solid var(--clr-dark-blue);
+}
+.btn-code-outline{
+    color: var(--clr-dark-blue);
+    background-color: transparent;
+    border: 2px solid var(--clr-dark-blue);
+}
+.btn-code-outline:hover{
+    color: var(--clr-white);
+    background-color: var(--clr-main);
+    border: 2px solid var(--clr-main);
+}
+.blog-list-container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+.blog-list-item{
+    width: 30rem;
+    height:8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 2px solid var(--clr-dark-blue)
+}
+.blog-img-container img{
+    width:8rem;
+height:6rem;
+margin-left: 1rem;
+margin-right: 1rem;
+border-radius: 10px;
+}
+
+.blog-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 8rem;
+}
+.blog-details .btn{
+margin: auto;
+}
+
+
 
 @media screen and (max-width : 768px){
    .header{
@@ -220,4 +298,13 @@ font-size: 3.rem;
         margin-top: 1rem;
 
     }
+    .project-btn-container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .project-btn-container .btn{
+        margin: 0.25rem auto;
+    }
+    .project-list-item
+    
 }
