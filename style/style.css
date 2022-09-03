@@ -202,7 +202,7 @@ font-size: 3.rem;
 }
 .project-list-item{
     width: 22rem;
-    height: 20rem;
+    /*height: 20rem;*/
    border-radius: 10px;
    border: 2px solid var(--clr-dark-blue);
    transition: all 0.3s ease;
